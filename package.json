@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon ./index.js",
+    "run:project": "node ./index.js",
     "test": "jest",
     "test:watch": "jest --watchAll"
   },

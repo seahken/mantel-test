@@ -18,7 +18,6 @@ function parseLogIntoArrayFromFile(filename) {
 }
 
 function getArrayNumberOfUniqueProp(arr, propName) {
-
     const countObj = {};
     for (let i = 0; i < arr.length; i++) {
         countObj[arr[i][propName]] = 1 + (countObj[arr[i][propName]] || 0);
@@ -77,13 +76,13 @@ function getTop3CountValues(filename, propName) {
 }
 
 // find number of unique IP addresses
-console.log('getNumberOfUniqueIpAddress', getNumberOfUnique('/programming-task-example-data.log', 'ipAddress'))
+console.log('The number of unique IP addresses', getNumberOfUnique('/programming-task-example-data.log', 'ipAddress'))
 
 // top 3 most visted URL
-console.log('getTop3CountValues resource', getTop3CountValues('/programming-task-example-data.log', 'resource'))
+console.log('The top 3 most visited URLs', getTop3CountValues('/programming-task-example-data.log', 'resource'))
 
 // // top 3 IP addresses
-console.log('getTop3CountValues ipAddress', getTop3CountValues('/programming-task-example-data.log', 'ipAddress'))
+console.log('The top 3 most active IP addresses', getTop3CountValues('/programming-task-example-data.log', 'ipAddress'))
 
 
 module.exports = { getNumberOfUnique, getTop3CountValues }
